@@ -602,7 +602,30 @@
 
     <div id="menu7" class="container tab-pane fade"><br>
       <h3>Kontakt</h3>
-      <p>Ved spørgsmål eller anden henvendelse, kan mail: lonehilke@gmail.com bruges.</p>
+      <p>Ved spørgsmål eller anden henvendelse, Kan anmeldelse udfyldes nedenfor, <br>eller prøv mere info.</p>
+      <button type="button" class="btn btn-primary" id="toastbtn">Mere info</button>
+
+      <div class="toast">
+        <div class="toast-header">
+          <strong class="me-auto">Vigtig info</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          <p><font color=green>Hvis I vil sende direkte til mig<br> kan følgende mail bruges<br>
+          <b>lonehilke@gmail.com</b></font></p>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("toastbtn").onclick = function() {
+          var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+          var toastList = toastElList.map(function(toastEl) {
+            return new bootstrap.Toast(toastEl)
+          })
+          toastList.forEach(toast => toast.show()) 
+        }
+        </script>
+
       <form action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
