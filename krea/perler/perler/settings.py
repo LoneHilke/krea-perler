@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-p*o5-2*n6vy=kczt6m0^)6j^*&d85!l6ixyhn^57%bb9%_j5i9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+APP_NAME = os.environ.get("FLY_KREA-PERLER")
+ALLOWED_HOSTS = [f"{KREA-PERLER}.fly.dev"]
 
 
 # Application definition
