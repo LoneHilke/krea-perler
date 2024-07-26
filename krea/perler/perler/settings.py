@@ -27,7 +27,7 @@ SECRET_KEY = '3dd3934013ea7a2a'#'django-insecure-p*o5-2*n6vy=kczt6m0^)6j^*&d85!l
 DEBUG = True
 
 APP_NAME = os.environ.get("FLY_PERLER")
-ALLOWED_HOSTS = [f"{'PERLER'}.fly.dev"]
+ALLOWED_HOSTS = ['perler-bold-cherry-4354.fly.dev']
 
 
 # Application definition

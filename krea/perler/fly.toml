@@ -1,9 +1,10 @@
-# fly.toml app configuration file generated for perler on 2024-07-26T16:41:25+02:00
+# fly.toml app configuration file generated for perler-bold-cherry-4354 on 2024-07-26T17:06:18+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'perler'
+app = 'perler-bold-cherry-4354'
+primary_region = 'ams'
 console_command = '/code/manage.py shell'
 
 [build]
