@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'perler.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'postgresql://krea-perler.flycast',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': BASE_DIR / 'postgresql',
     }
 }
 
