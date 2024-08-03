@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sjov',
+    #'psycopg',
+    'psycopg2',
 ]
 
 MIDDLEWARE = [
@@ -77,13 +79,19 @@ WSGI_APPLICATION = 'perler.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default':# env.dj_db_url("DATABASE_URL"),
+     #}
+    {
+        
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': BASE_DIR / 'postgresql://krea-perler.flycast',
-    }
+        
 }
+   }
 
+    
 
+DATABASE_URL='postgresql:///krea-perler.flycast'
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
