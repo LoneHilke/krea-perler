@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sjov',
     #'psycopg',
-    'psycopg2',
+    'psycopg2-binary',
 ]
 
 MIDDLEWARE = [
