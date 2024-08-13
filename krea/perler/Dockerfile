@@ -10,7 +10,7 @@ RUN mkdir -p /code
 WORKDIR /code
 
 COPY requirements.txt /tmp/requirements.txt
-RUN apt-get update && apt-get install -y <image>
+RUN apt-get update && apt-get install -y <>
 RUN set -ex && \
     pip install --upgrade pip && \
     pip install -r /tmp/requirements.txt && ||{ cat /root/.cache/pip.log; exit 1; } && \
