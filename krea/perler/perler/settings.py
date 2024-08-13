@@ -27,7 +27,7 @@ SECRET_KEY = '3dd3934013ea7a2a'#'django-insecure-p*o5-2*n6vy=kczt6m0^)6j^*&d85!l
 DEBUG = True
 
 APP_NAME = os.environ.get("FLY_PERLER")
-ALLOWED_HOSTS = ['perler-bold-cherry-4354.fly.dev', '0.0.0.0:8000']
+ALLOWED_HOSTS = ['perlerkrea.fly.dev']
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sjov',
     #'psycopg',
-    'psycopg2-binary',
+    #'psycopg2-binary',
 ]
 
 MIDDLEWARE = [
@@ -84,14 +84,14 @@ DATABASES = {
     {
         
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'postgresql://krea-perler.flycast',
+        'NAME': BASE_DIR / 'postgresql://kreaperler.flycast',
         
 }
    }
 
     
 
-DATABASE_URL='postgresql:///krea-perler.flycast'
+DATABASE_URL='postgresql:///kreaperler.flycast'
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
