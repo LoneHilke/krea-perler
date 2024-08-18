@@ -1,13 +1,16 @@
-# fly.toml app configuration file generated for perler-bold-cherry-4354 on 2024-07-26T17:06:18+02:00
+# fly.toml app configuration file generated for perler-ancient-sun-2708 on 2024-08-17T11:04:23+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'perler-bold-cherry-4354'
+app = 'perler-ancient-sun-2708'
 primary_region = 'ams'
 console_command = '/code/manage.py shell'
 
 [build]
+
+[deploy]
+  release_command = 'python manage.py migrate --noinput'
 
 [env]
   PORT = '8000'

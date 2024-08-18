@@ -26,8 +26,8 @@ SECRET_KEY = '3dd3934013ea7a2a'#'django-insecure-p*o5-2*n6vy=kczt6m0^)6j^*&d85!l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-APP_NAME = os.environ.get("FLY_PERLER")
-ALLOWED_HOSTS = ['perlerkrea.fly.dev']
+APP_NAME = os.environ.get("perler-ancient-sun-2708")
+ALLOWED_HOSTS = ['https://perler-ancient-sun-2708.fly.dev/']
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
     {
         
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'postgresql://kreaperler.flycast',
+        'NAME': BASE_DIR / 'postgresql://krea-perler-db.flycast',
         
 }
    }
