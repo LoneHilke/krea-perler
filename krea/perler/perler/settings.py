@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '3dd3934013ea7a2a'#'django-insecure-p*o5-2*n6vy=kczt6m0^)6j^*&d85!l6ixyhn^57%bb9%_j5i9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 APP_NAME = os.environ.get("perler-ancient-sun-2708")
 ALLOWED_HOSTS = ['https://perler-ancient-sun-2708.fly.dev/']
