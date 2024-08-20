@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for perler-ancient-sun-2708 on 2024-08-17T11:04:23+02:00
+# fly.toml app configuration file generated for perler-bitter-snow-5173 on 2024-08-18T15:37:21+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'perler-ancient-sun-2708'
+app = 'perler-bitter-snow-5173'
 primary_region = 'ams'
 console_command = '/code/manage.py shell'
 
